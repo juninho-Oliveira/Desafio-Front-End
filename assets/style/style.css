@@ -7,6 +7,11 @@
     font-family: "Comic Neue", cursive;
 }
 
+/* realizar scroll suave na minha pagina html */
+html{
+    scroll-behavior: smooth;
+}
+
 
 .container-grid {
     width: 90%;
