@@ -61,20 +61,22 @@ header {
 }
 
 .titulos {
-    margin-top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     color: white;
 }
 
-.titulos> div {
+.container-titulos {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 10%;
+    
 }
 
 .titulos> div h1 {
@@ -82,13 +84,16 @@ header {
 }
 
 .titulos> div h2 {
+    font-weight: 400;
     font-size: 36px;
 }
 
 .botao-banner {
-    height: 150px;
-    width: 300px ;
-    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
 }
 
 .botao-banner> button {
