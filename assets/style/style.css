@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Neue", cursive;
+}
+
+
+.container-grid {
+    width: 90%;
+    /*border: 1px solid rgb(79, 16, 226);*/
+}
+
+/*estilazão do header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: #0C1C28;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 90%;
+}
+
+.container-menu> button {
+    width: 2.5rem;
+    height: 1.5rem;
+    border: none;
+    background-color: transparent;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.container-menu> button img {
+    width: 100%;
+    height: 100%;
+}
+
+/*estilazão do banner main*/
+
+.container-banner {
+    width: 100%;
+    height: 40rem;
+    background-image: url(/assets/imagens/Banner.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulos {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.titulos> div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulos> div h1 {
+    font-size: 64px;
+}
+
+.titulos> div h2 {
+    font-size: 36px;
+}
+
+.botao-banner {
+    height: 150px;
+    width: 300px ;
+    margin-top: 150px;
+}
+
+.botao-banner> button {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    width: 240px;
+    height: 50px;
+}
+
+.botao-banner> button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.botao-descer> button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 60px;
+    color: white;
+    width: 60px;
+}
+
+.seta {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.seta:hover {
+    color: #0C1C28;
+}
