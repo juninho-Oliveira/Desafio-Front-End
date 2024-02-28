@@ -15,7 +15,10 @@ html{
 
 .container-grid {
     width: 90%;
-    border: 1px solid rgb(79, 16, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /*estilazão do header*/
@@ -33,7 +36,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 90%;
+    width: 100%;
 }
 
 .container-menu> button {
@@ -140,14 +143,22 @@ header {
 
 /*estilo do container principal o main*/
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0C1C28;
+    gap: 20px;
+}
+
 .container-main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
-    /*height: 1765px;*/
     background-color: #0C1C28;
-
 }
 
 .container-cards {
@@ -190,4 +201,63 @@ header {
     transition: 0.8s;
     color: #0C1C28;
     background-color: white;
+}
+
+article {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+article h1 {
+    font-size: 48px;
+}
+
+article span {
+    color: #38A1C6;
+}
+
+article p {
+    font-size: 16px;
+    width: 53%;
+}
+
+/*estilo dos cards de imagem*/
+
+.container-cardsImagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.cardsImagem {
+    height: 296px;
+    width: 270px;
+    font-size: 14px;
+    color: white;
+}
+
+/*estilo dos cards de pessoas*/
+
+.container-cardsPessoas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardsPessoas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 368px;
+    height: 396px;
+    border-radius: 16px;
+    background-color: white;
+    color: #0C1C28;
 }
