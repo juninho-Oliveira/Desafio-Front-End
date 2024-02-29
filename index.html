@@ -11,19 +11,26 @@
 
 <body>
     <header>
-        <nav class="container-grid">
-            <div class="container-menu">
-                <button onclick="teste()">
-                    <img src="/assets/imagens/BotãoMenu.png" alt="Botão Menu">
-                </button>
+        <div class="container-grid">
+            <nav>
+                <ul id="menu-li">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#Servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
 
-            </div>
-
-        </nav>
+                <div class="container-menu">
+                    <button onclick="mostrarMenu()">
+                        <img src="/assets/imagens/BotãoMenu.png" alt="Botão Menu">
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="container-banner">
+        <section class="container-banner" id="Home">
             <div class="container-grid">
                 <div class="titulos">
 
@@ -38,7 +45,7 @@
                         <button>Lorem ipsum ></button>
 
                         <div class="botao-descer">
-                            <a href="#secaoPrincipal">
+                            <a href="#Servicos">
                                 <span class="seta">></span>
                             </a>
                         </div>
@@ -48,7 +55,7 @@
             </div>
         </section>
 
-        <section class="container-main" id="secaoPrincipal">
+        <section class="container-main" id="Servicos">
 
             <div class="container-grid">
 
@@ -89,17 +96,16 @@
             </div>
         </section>
 
-        <article class="container-main">
+        <section class="container-main" >
+            <article class="container-main">
 
-            <div class="container-grid">
-                <h1>Lorem ipsum.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus gravida
-                    mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Pellentesquisus</span>
-                    gravida mattis. e nec nibh eu risus gravida mattis. Ut at lectus lectus </p>
-            </div>
-        </article>
-
-        <section class="container-main">
+                <div class="container-grid">
+                    <h1>Lorem ipsum.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus gravida
+                        mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Pellentesquisus</span>
+                        gravida mattis. e nec nibh eu risus gravida mattis. Ut at lectus lectus </p>
+                </div>
+            </article>
             <div class="container-grid">
                 <div class="container-cardsImagem">
                     <div class="cardsImagem">
@@ -125,16 +131,15 @@
             </div>
         </section>
 
-        <article class="container-main">
+        <section class="container-main" id="sobre">
+            <article class="container-main">
 
-            <div class="container-grid">
-                <h1>Lorem ipsum.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus gravida
-                    mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing. </p>
-            </div>
-        </article>
-
-        <section class="container-main">
+                <div class="container-grid">
+                    <h1>Lorem ipsum.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus gravida
+                        mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing. </p>
+                </div>
+            </article>
             <div class="container-grid">
 
                 <div class="container-cardsPessoas">
@@ -191,9 +196,9 @@
             </div>
         </section>
 
-        <section class="container-banner-form">
+        <section class="container-banner-form" id="contato">
             <div class="container-grid">
-                <form action="" onsubmit="formulario(event)">
+                <form action="" onsubmit="formulario(event)" method="post">
                     <div class="fomr-container">
                         <div class="row g-3 ">
                             <div class="col-md-6 mb-2">
@@ -222,15 +227,14 @@
 
                         <div class="form-floating">
                             <textarea class="form-control border-Light larger-input" placeholder="Mensagem"
-                                style="height: 100px"></textarea>
+                                ></textarea>
                         </div>
                     </div>
-                    <button class="botao-form"> Enviar </button>
+                    <button class="botao-form">Lorem ipsum </button>
                 </form>
-                
+
             </div>
         </section>
-
 
     </main>
 
@@ -242,8 +246,8 @@
         </div>
     </footer>
 
-    <script src="/assets/js/main.js">
-    </script>
+    <script src="/assets/js/main.js"></script>
+
 </body>
 
 </html>

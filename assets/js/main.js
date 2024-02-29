@@ -1,19 +1,27 @@
 
 
-function teste() {
-  alert('pegou')
+function formulario(e) {
+  e.preventDefault();
+
+  const nome = document.getElementById('nome').value;
+  const sobrenome = document.getElementById('sobrenome').value;
+  const email = document.getElementById('email').value;
+  const telefone = document.getElementById('telefone').value;
+
+  if (!nome || !sobrenome || !telefone || !email ) {
+    alert('Por favor, preencha todos os campos!');
+    return false;
+  }
+
+  console.log('Nome:', nome);
+  console.log('Sobrenome:', sobrenome);
+  console.log('E-mail:', email);
+  console.log('telefone:', telefone);
 }
 
-function formulario(event) {
-  event.preventDefault(); // Impede o comportamento padrão do formulário (recarregar a página)
 
-  // Aqui você pode acessar os valores dos campos do formulário
-  var nome = document.getElementById('nome').value;
-  var email = document.getElementById('email').value;
+function mostrarMenu () {
+  const menu = document.getElementById('menu-li');
 
-  // Faça algo com os valores dos campos (exemplo de log no console)
-  console.log('Nome:', nome);
-  console.log('Email:', email);
-
-  // Adicione código para processar os dados do formulário ou realizar outras ações desejadas.
+  menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "flex" : "none";
 }
