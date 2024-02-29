@@ -22,6 +22,6 @@ function formulario(e) {
 
 function mostrarMenu () {
   const menu = document.getElementById('menu-li');
-
+  
   menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "flex" : "none";
 }
