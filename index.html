@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/style/style.css">
     <title>Single Page</title>
 </head>
@@ -12,7 +13,7 @@
     <header>
         <nav class="container-grid">
             <div class="container-menu">
-                <button>
+                <button onclick="teste()">
                     <img src="/assets/imagens/BotãoMenu.png" alt="Botão Menu">
                 </button>
 
@@ -138,26 +139,95 @@
 
                 <div class="container-cardsPessoas">
                     <div class="cardsPessoas">
-                        <img src="/assets/imagens/Ellipse 1.png" alt="Ellipse">
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus gravida mattis. </p>
-                        <h5>Pessoa Nome</h5>
-                        <p>Cargo na companhia Etc</p>
+                        <div class="cardImagem">
+                            <img src="/assets/imagens/Ellipse 1.png" alt="Ellipse">
+                        </div>
+                        <div class="cardSobre">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus
+                                gravida mattis. </p>
+                        </div>
+                        <div class="cardsNome">
+                            <h5>Pessoa Nome</h5>
+                            <p>Cargo na companhia Etc</p>
+                        </div>
+
                     </div>
 
                     <div class="cardsPessoas">
-                        <img src="/assets/imagens/Ellipse 2.png" alt="Ellipse">
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus gravida mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing.nec nibh eu risus gravida mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing.”</p>
-                        <h5>Pessoa Nome</h5>
-                        <p>Cargo na companhia Etc</p>
+                        <div class="cardImagem">
+                            <img src="/assets/imagens/Ellipse 2.png" alt="Ellipse">
+                        </div>
+                        <div class="cardSobre">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus
+                                gravida mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing.nec nibh eu
+                                risus
+                                gravida mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing.”</p>
+                        </div>
+                        <div class="cardsNome">
+                            <h5>Pessoa Nome</h5>
+                            <p>Cargo na companhia Etc</p>
+                        </div>
+
                     </div>
 
                     <div class="cardsPessoas">
-                        <img src="/assets/imagens/Ellipse 3.png" alt="Ellipse">
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus gravida mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing.nec nibh eu risus gravida mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing.”at Lorem ipsum dolor sit amet, consectetur adipiscing.”</p>
-                        <h5>Pessoa Nome</h5>
-                        <p>Cargo na companhia Etc</p>
+                        <div class="cardImagem">
+                            <img src="/assets/imagens/Ellipse 3.png" alt="Ellipse">
+                        </div>
+                        <div class="cardSobre">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nibh eu risus
+                                gravida mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing.nec nibh eu
+                                risus
+                                gravida mattis. Ut at Lorem ipsum dolor sit amet, consectetur adipiscing.”at Lorem ipsum
+                                dolor sit amet, consectetur adipiscing.”</p>
+                        </div>
+                        <div class="cardsNome">
+                            <h5>Pessoa Nome</h5>
+                            <p>Cargo na companhia Etc</p>
+                        </div>
                     </div>
+
                 </div>
+            </div>
+        </section>
+
+        <section class="container-banner-form">
+            <div class="container-grid">
+                <form action="" onsubmit="formulario(event)">
+                    <div class="fomr-container">
+                        <div class="row g-3 ">
+                            <div class="col-md-6 mb-2">
+
+                                <input type="text" class="form-control border-Light larger-input" id="nome"
+                                    placeholder="Nome" aria-label="First name">
+                            </div>
+                            <div class="col-md-6 mb-2">
+
+                                <input type="text" class="form-control larger-input" id="sobrenome"
+                                    placeholder="Sobrenome" aria-label="Last name">
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6 mb-2">
+
+                                <input type="email" class="form-control border-Light larger-input" id="email"
+                                    placeholder="E-mail" aria-label="Email">
+                            </div>
+                            <div class="col-md-6 mb-2 ">
+
+                                <input type="number" class="form-control larger-input" id="telefone"
+                                    placeholder="Telefone" aria-label="Telefone">
+                            </div>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control border-Light larger-input" placeholder="Mensagem"
+                                style="height: 100px"></textarea>
+                        </div>
+                    </div>
+                    <button class="botao-form"> Enviar </button>
+                </form>
+                
             </div>
         </section>
 
@@ -165,8 +235,15 @@
     </main>
 
     <footer>
-
+        <div class="container-grid">
+            <div class="container-footer">
+                <p> &#169; 2024 Sitename - Todos os direitos reservados</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="/assets/js/main.js">
+    </script>
 </body>
 
 </html>
