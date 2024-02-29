@@ -424,7 +424,7 @@ footer {
     nav ul{
         position: absolute;
         width: 100%;
-        height: 10%;
+        height: 14%;
         top: 100;
         left: 0;
         transform: translateX(-100%);
